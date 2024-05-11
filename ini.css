@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #ffb6c1;
+    color: white;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    padding: 10px 10%;  
+}
+nav{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #f08080;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.side-bar{
+    background: #DB7093;
+    width: 250px;
+    left: -250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    overflow-y: auto;
+    transition: 0.6s ease;
+    transition-property: left;
+}
+#barside{
+    background: #e68dab;
+}
+#barside img{
+    width: 100px;
+    margin: 15px;
+    margin-left: 70px;
+    border-radius: 50%;
+    border: 3px solid #FFC0CB;
+
+}
+.tutup{
+    position: absolute;
+    color: #fff;
+    font-size: 23px;
+    right: 0px;
+    margin: 15px;
+    cursor: pointer;
+}
+#barside h1{
+    text-align: center;
+    font-weight: 500;
+    font-size: 25px;
+    padding-bottom: 13px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+}
+.menu{
+    width: 100%;
+    margin-top: 30px;
+}
+.menu .item{
+    position: relative;
+    cursor: pointer;
+}
+.menu .item a{
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    padding: 5px 30px;
+    line-height: 60px;
+}
+.item i{
+    margin-right: 15px;
+}
+.item a .dropdown{
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    transition: 0.3s ease;
+}
+.item .sub-menu{
+    background: #DB7093;
+    display: none;
+}
+.menu-btn{
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    cursor: pointer;
+    margin: 25px;
+}
+.side-bar.active{
+    left: 0;
+}
+.main-content{
+    position: absolute;
+    top: 50%;
+    left: calc(20% + 9px);
+    transform: translateY(-50%);
+    text-align: left;
+    padding-left: 20px;
+}
+.main-content p{
+    margin-bottom: 15px;
+}
+footer{
+    background-color: #e68dab;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+footer p{
+    margin: 0;
+}
+.main-content pre{
+    font-family: 'Times New Roman', Times, serif;
+}

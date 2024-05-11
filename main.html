@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>285-TugasPWEB</title>
+    <link rel="stylesheet" href="ini.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+   <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+   <div id="header">
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+
+   <div class="side-bar">
+    <header id="barside">
+        <div class="tutup">
+            <i class="fas fa-times"></i>
+        </div>
+        <img src="gambar/Pink profile picture 🎀.jpeg" alt="Gambar Profile Pink dengan pita">
+        <h1>Menu</h1>
+    </header>
+    <div class="menu">
+        <div class="item"><a href=""><i class="fas fa-desktop"></i>Dashboard</a></div>
+        <div class="item"><a class="sub-btn"><i class="fas fa-address-book"></i>Contact
+        <i class="fas fa-angle-right dropdown"></i>
+        </a>
+        <div class="sub-menu">
+            <a href="https://www.instagram.com/sucy.rahmadani.07?igsh=MXJpNm0xNWlvdGlwZA==" class="sub-item">Instagram</a>
+            <a href="https://x.com/SucyRahmadani15?t=EDePm-sStz2NZv_JvJwWwQ&s=09" class="sub-item">Twitter</a>
+            <a href="mailto:2300018285@webmail.uad.ac.id" class="sub-item">Email</a>
+        </div>
+        </div>
+    </div>
+
+   </div>
+
+   <div class="main-content">
+    <h2>Tugas Portofolio</h2>
+    <p>Assalamualaikum, nama saya Sucy Rahmadani Afifudin. NIM 2300018285</p>
+   </div>
+
+   <footer>
+    <div class="kaki">
+        <p>&copy; 2024 Sucy. Bismillah tidak <span style="color: red;">Error</span></p>
+    </div>
+   </footer>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+   <script>
+    $(document).ready(function(){
+        $('.menu-btn').click(function(){
+            $('.side-bar').addClass('active');
+            $('.menu-btn').css("visibility", "hidden");
+        });
+        $('.tutup').click(function(){
+            $('.side-bar').removeClass('active');
+            $('.menu-btn').css("visibility", "visible");
+        });
+
+        $('.sub-btn').click(function(){
+            $(this).next('.sub-menu').slideToggle();
+            $(this).find('.dropdown').toggleClass('rotate');
+        });
+    });
+   </script>
+</body>
+</html>
